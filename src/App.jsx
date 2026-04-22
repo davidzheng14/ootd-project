@@ -10,12 +10,13 @@ import { AddPage } from './pages/AddPage.jsx'
 function App() {
   
   const [closet,setCloset] = useState([]);
+  const [outfitList, setOutfitList] = useState([]);
 
   return (
     <>
     <Routes>
       <Route path="/" element={<HomePage closet={closet}/>} />
-      <Route path="closet" element={<ClosetPage closet={closet} />} />
+      <Route path="closet" element={<ClosetPage closet={closet} outfitList={outfitList} setOutfitList={setOutfitList} />} />
       <Route path="outfit" element={<OutfitPage />} />
       <Route path="calendar" element={<CalendarPage />} />
       <Route path="add" element={<AddPage closet={closet} setCloset={setCloset}/>} />
