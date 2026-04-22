@@ -131,17 +131,7 @@ export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
             <div>
                 {outfitDraft.length > 0 && <button onClick={handleAddOutfit}> Add Outfit </button>}
             </div>
-            <div>
-                <h1> Outfit List: </h1>
-                Outfits: {outfitList.length}
-                {outfitList.map((outfit) => {
-                    return (
-                        <div className="outfit">
-                            <ListViewer list={outfit} />
-                        </div>
-                    );
-                })}
-            </div>
+            
         </>
     );
 }
