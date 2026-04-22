@@ -7,7 +7,7 @@ export function Header() {
     return (
         <>
             <div>
-                <Link to="/">Go to HomePage</Link>
+                <Link to="/">Go to Home</Link>
             </div>
 
             <div>
@@ -21,7 +21,7 @@ export function Header() {
             <div>
                 <Link to="/calendar">Go to Calendar</Link>
             </div>
-            
+
             <div>
                 <Link to="/add">Go to Add</Link>
             </div>
