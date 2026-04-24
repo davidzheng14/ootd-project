@@ -15,7 +15,7 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path="/" element={<HomePage closet={closet}/>} />
+      <Route path="/" element={<HomePage closet={closet} outfitList={outfitList}/>} />
       <Route path="closet" element={<ClosetPage closet={closet} setCloset={setCloset} outfitList={outfitList} setOutfitList={setOutfitList} />} />
       <Route path="outfit" element={<OutfitPage outfitList={outfitList} />} />
       <Route path="calendar" element={<CalendarPage />} />

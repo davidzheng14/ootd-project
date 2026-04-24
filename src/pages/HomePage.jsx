@@ -1,6 +1,6 @@
 import { Header } from '../components/Header.jsx';
 
-export function HomePage({closet}) {
+export function HomePage({closet, outfitList}) {
 
     const firstName = "David";
     const lastName = "Zheng";
@@ -22,6 +22,9 @@ export function HomePage({closet}) {
                 </div>
                 <div>
                     Items: {closet.length}
+                </div>
+                <div>
+                    Outfits: {outfitList.length}
                 </div>
             </div>
         </>
