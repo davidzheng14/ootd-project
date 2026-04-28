@@ -14,4 +14,11 @@
 
 .nav .link {
     list-style: none;
+    font-size: 2rem;
+    padding: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav .link:hover{
+    background-color:green;
 }
