@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import { Header } from '../components/Header.jsx';
 import { ListViewer } from '../components/ListViewer.jsx';
 
 export function AddPage({ closet, setCloset }) {
@@ -156,7 +155,6 @@ export function AddPage({ closet, setCloset }) {
 
     return (
         <>
-            <Header />
 
             <div class="tab-button">
                 Add

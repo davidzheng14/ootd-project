@@ -1,4 +1,4 @@
-import { Header } from '../components/Header.jsx';
+
 
 export function HomePage({closet, outfitList}) {
 
@@ -7,7 +7,6 @@ export function HomePage({closet, outfitList}) {
 
     return (
         <>
-            <Header />
 
             <h1>
                 Welcome, {firstName}!

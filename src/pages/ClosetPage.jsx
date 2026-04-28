@@ -1,5 +1,4 @@
 import { ListViewer } from "../components/ListViewer";
-import { Header } from '../components/Header.jsx';
 import { useState } from 'react';
 
 export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
@@ -69,7 +68,6 @@ export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
 
     return (
         <>
-            <Header />
             <div className="tab-button">
                 Closet
             </div>
