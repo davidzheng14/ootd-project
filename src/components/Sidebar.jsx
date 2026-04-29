@@ -4,33 +4,13 @@ import ootd from '../assets/ootd.jpg';
 
 export function Sidebar() {
 
-    // <Link to="/">OOTD </Link>
-
     return (
         <nav className="nav">
-            {/* <div className="tab">
-                <Link to="/">Go to Home</Link>
-            </div>
-
-            <div className="tab">
-                <Link to="/closet">Go to Closet</Link>
-            </div>
-
-            <div className="tab">
-                <Link to="/outfit">Go to Outfit</Link>
-            </div>
-
-            <div className="tab">
-                <Link to="/calendar">Go to Calendar</Link>
-            </div>
-
-            <div className="tab">
-                <Link to="/add">Go to Add</Link>
-            </div> */}
+            
             <div className="logo">
                 <img src={ootd} />
             </div>
-            <ul>
+            <ul className="links">
                 <li className="link">
                     <Link to="/">Profile</Link>
                 </li>
