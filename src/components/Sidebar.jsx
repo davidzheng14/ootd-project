@@ -12,11 +12,11 @@ export function Sidebar() {
             </div>
             <ul className="links">
                 <li className="link">
-                    <i class="bx bx-user-circle" />
+                    <i className="bx bx-user-circle" />
                     <Link to="/">Profile</Link>
                 </li>
                 <li className="link">
-                    <i class="bx bx-cupboard" />
+                    <i className="bx bx-cupboard" />
                     <Link to="/closet">Closet</Link>
                 </li>
                 <li className="link">

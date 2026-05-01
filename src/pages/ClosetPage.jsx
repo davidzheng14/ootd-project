@@ -1,5 +1,6 @@
 import { ListViewer } from "../components/ListViewer";
 import { useState } from 'react';
+import { Link } from 'react-router';
 
 export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
 
@@ -86,6 +87,22 @@ export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
                 <button onClick={showAccessories}>Accessories</button>
                 <button onClick={showOthers}>Others</button>
             </div>
+
+            <div>
+                <Link to="/closet/all">View All</Link>
+                <Link to="/closet/tops">Tops</Link>
+                <Link to="/closet/bottoms">Bottoms</Link>
+                <Link to="/closet/outerwear">Outerwear</Link>
+                <Link to="/closet/one-pieces">One-pieces</Link>
+                <Link to="/closet/undergarments">Undergarments</Link>
+                <Link to="/closet/footwear">Footwear</Link>
+                <Link to="/closet/accessories">Accessories</Link>
+                <Link to="/closet/others">Others</Link>
+            </div>
+
+
+
+
             <div>
                 Sort by:
                 <select>
