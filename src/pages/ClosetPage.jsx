@@ -1,6 +1,7 @@
 import { ListViewer } from "../components/ListViewer";
 import { useState } from 'react';
 import { Link } from 'react-router';
+import './ClosetPage.css';
 
 export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
 
@@ -72,7 +73,7 @@ export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
             <div className="tab-button">
                 Closet
             </div>
-            <div>
+            {/* <div>
                 <button onClick={showAll}>View All</button>
                 <button onClick={showTops}>Tops</button>
                 <button onClick={showBottoms}>Bottoms</button>
@@ -86,19 +87,45 @@ export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
                 <button onClick={showFootwear}>Footwear</button>
                 <button onClick={showAccessories}>Accessories</button>
                 <button onClick={showOthers}>Others</button>
-            </div>
+            </div> */}
 
-            <div>
+            
+            
+            <div className="closet-button">
+                <i class="ph ph-coat-hanger"></i>
                 <Link to="/closet/all">View All</Link>
+                
+            </div>
+            <div className="closet-button">
+                <i class="ph ph-t-shirt"></i>
                 <Link to="/closet/tops">Tops</Link>
+            </div>
+            <div className="closet-button">
+                <i class="ph ph-pants"></i>
                 <Link to="/closet/bottoms">Bottoms</Link>
+            </div>
+            <div className="closet-button">
+                <i class="ph ph-hoodie"></i>
                 <Link to="/closet/outerwear">Outerwear</Link>
+            </div>
+            <div className="closet-button">
+                <i class="ph ph-dress"></i>
                 <Link to="/closet/one-pieces">One-pieces</Link>
+            </div>
+            <div className="closet-button">
                 <Link to="/closet/undergarments">Undergarments</Link>
+            </div>
+            <div className="closet-button">
                 <Link to="/closet/footwear">Footwear</Link>
+            </div>
+            <div className="closet-button">
                 <Link to="/closet/accessories">Accessories</Link>
+            </div>
+            <div className="closet-button">
                 <Link to="/closet/others">Others</Link>
             </div>
+            
+            
 
 
 
