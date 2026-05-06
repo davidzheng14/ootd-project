@@ -44,6 +44,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .app {
@@ -53,6 +54,7 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
+  background-color: #F7F7F7;
 }
 
 .content{
