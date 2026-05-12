@@ -1,6 +1,7 @@
 .closet-page {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     height: 100vh;
 
 }
@@ -15,7 +16,6 @@
     flex: 1;
     border-radius: 30px;
     margin: 40px;
-    
 }
 
 .closet-button a {

@@ -1,9 +1,9 @@
-import { ListViewer } from "../components/ListViewer";
+
 import { useState } from 'react';
 import { Link } from 'react-router';
 import './ClosetPage.css';
 
-export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
+export function ClosetPage() {
 
     
     
@@ -44,9 +44,6 @@ export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
     //     setDisplay([...closet].filter((item) => item.category == "others"));
     // }
 
-    // function handleMode() {
-    //     setOutfitMode(outfitMode ? false : true);
-    // }
 
     
 
@@ -59,9 +56,9 @@ export function ClosetPage({ closet, setCloset, outfitList, setOutfitList }) {
 
     return (
         <>
-            <div className="tab-button">
+            {/* <div className="tab-button">
                 <h1>Closet </h1>
-            </div>
+            </div> */}
             {/* <div>
                 <button onClick={showAll}>View All</button>
                 <button onClick={showTops}>Tops</button>

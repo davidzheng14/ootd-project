@@ -1,7 +1,8 @@
 import { useParams } from "react-router";
 import { useState } from 'react';
+import { ListViewer } from "../components/ListViewer";
 
-export function CategoryPage() {
+export function CategoryPage({ closet, setCloset, outfitList, setOutfitList }) {
 
     const [display, setDisplay] = useState([]);
 
@@ -22,6 +23,10 @@ export function CategoryPage() {
     function handleAddOutfit() {
         setOutfitList([outfitDraft, ...outfitList]);
         setOutfitDraft([]);
+    }
+
+    function handleMode() {
+         setOutfitMode(outfitMode ? false : true);
     }
     
 
