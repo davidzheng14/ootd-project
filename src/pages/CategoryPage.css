@@ -1,0 +1,17 @@
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    background-color: #9FE2BF;
+}
+
+.closet-nav {
+    display: flex;
+    font-size: 2rem;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.closet-nav li:hover {
+    background-color: #9FE2BF;
+}
