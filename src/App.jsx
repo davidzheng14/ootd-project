@@ -21,8 +21,8 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/" element={<HomePage closet={closet} outfitList={outfitList}/>} />
-          <Route path="closet" element={<ClosetPage closet={closet} setCloset={setCloset} outfitList={outfitList} setOutfitList={setOutfitList} />} />
-          <Route path="closet/:category" element={<CategoryPage />} />
+          <Route path="closet" element={<ClosetPage  />} />
+          <Route path="closet/:category" element={<CategoryPage closet={closet} setCloset={setCloset} outfitList={outfitList} setOutfitList={setOutfitList}/>} />
           <Route path="outfit" element={<OutfitPage outfitList={outfitList} />} />
           <Route path="calendar" element={<CalendarPage />} />
           <Route path="add" element={<AddPage closet={closet} setCloset={setCloset}/>} />

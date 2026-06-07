@@ -29,6 +29,18 @@ export function CategoryPage({ closet, setCloset, outfitList, setOutfitList }) {
         setOutfitMode(outfitMode ? false : true);
     }
 
+    useEffect(() => {
+        if(category == "all"){
+            setDisplay([...closet]);
+        } else {
+            setDisplay([...closet].filter((item) => item.category == category));
+        }
+        
+        
+        
+        
+    }, [category]);
+
     
 
 
