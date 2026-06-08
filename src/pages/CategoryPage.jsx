@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { useEffect, useState } from 'react';
 import { ListViewer } from "../components/ListViewer";
 import './CategoryPage.css';
@@ -8,6 +8,8 @@ export function CategoryPage({ closet, setCloset, outfitList, setOutfitList }) {
     const [display, setDisplay] = useState([]);
 
     const { category } = useParams();
+
+    const navigate = useNavigate();
 
     const [outfitMode, setOutfitMode] = useState(false);
     const [outfitDraft, setOutfitDraft] = useState([]);
@@ -46,7 +48,16 @@ export function CategoryPage({ closet, setCloset, outfitList, setOutfitList }) {
             <div className="title">{category.charAt(0).toUpperCase() + category.slice(1)}</div>
 
             <ul className="closet-nav">
-                <li onClick={() => setDisplay([...closet])}>All</li>
+                <li onClick={() => navigate('/closet/all')}>All</li>
+                <li onClick={() => navigate('/closet/tops')}>Tops</li>
+                <li onClick={() => navigate('/closet/bottoms')}>Bottoms</li>
+                <li onClick={() => navigate('/closet/outerwear')}>Outerwear</li>
+                <li onClick={() => navigate('/closet/one-pieces')}>One-pieces</li>
+                <li onClick={() => navigate('/closet/undergarments')}>Undergarments</li>
+                <li onClick={() => navigate('/closet/footwear')}>Footwear</li>
+                <li onClick={() => navigate('/closet/accessories')}>Accessories</li>
+                <li onClick={() => navigate('/closet/others')}>Others</li>
+                {/* <li onClick={() => setDisplay([...closet])}>All</li>
                 <li onClick={() => setDisplay([...closet].filter((item) => item.category == "tops"))}>Tops</li>
                 <li onClick={() => setDisplay([...closet].filter((item) => item.category == "bottoms"))}>Bottoms</li>
                 <li onClick={() => setDisplay([...closet].filter((item) => item.category == "outerwear"))}>Outerwear</li>
@@ -54,7 +65,7 @@ export function CategoryPage({ closet, setCloset, outfitList, setOutfitList }) {
                 <li onClick={() => setDisplay([...closet].filter((item) => item.category == "undergarments"))}>Undergarments</li>
                 <li onClick={() => setDisplay([...closet].filter((item) => item.category == "footwear"))}>Footwear</li>
                 <li onClick={() => setDisplay([...closet].filter((item) => item.category == "accessories"))}>Accessories</li>
-                <li onClick={() => setDisplay([...closet].filter((item) => item.category == "others"))}>Others</li>
+                <li onClick={() => setDisplay([...closet].filter((item) => item.category == "others"))}>Others</li> */}
             </ul>
 
             <div>
