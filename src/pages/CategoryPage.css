@@ -18,3 +18,10 @@
 .closet-nav li:hover {
     background-color: #9FE2BF;
 }
+
+.closet-list {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}

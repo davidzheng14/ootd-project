@@ -80,10 +80,10 @@ export function CategoryPage({ closet, setCloset, outfitList, setOutfitList }) {
             <div>
                 <button onClick={handleMode}> Outfit Mode </button>: {outfitMode ? "On" : "Off"}
             </div>
-            {/* <div>
+            <div className="closet-list">
                 {display.map((item) => {
                     return (
-                        <>
+                        <div>
                             <div className="item" key={item.id} onClick={outfitMode && (() => addToDraft(item))}>
                                 <div className="image">
                                     <img src={item.image} width="100" height="100" />
@@ -98,12 +98,12 @@ export function CategoryPage({ closet, setCloset, outfitList, setOutfitList }) {
                                 <div> Category : {item.category} </div>
                             </div>
                             <button onClick={() => handleRemove(item.id)}> Remove </button>
-                        </>
+                        </div>
                     );
                 })}
-            </div> */}
+            </div>
 
-            <ListViewer list={display} />
+            {/* <ListViewer list={display} /> */}
 
             
 
