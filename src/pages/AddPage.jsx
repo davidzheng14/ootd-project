@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { ListViewer } from '../components/ListViewer.jsx';
+// import a from '../assets/black-t-shirt.jpg';
 
 export function AddPage({ closet, setCloset }) {
 
@@ -152,6 +153,34 @@ export function AddPage({ closet, setCloset }) {
         setPrice("");
     }
 
+    const sample = [
+        {
+            category: "tops",
+            type: "T-Shirt",
+            color: "Black",
+            size: "Small",
+            brand: "Uniqlo",
+            date: today,
+            image: "/black-t-shirt.jpg",
+            price: "$20.00",
+            id: crypto.randomUUID() 
+        },
+        {
+            category: "bottoms",
+            type: "Jean",
+            color: "Blue",
+            size: "Medium",
+            brand: "Levi",
+            date: today,
+            image: "/blue-jeans.jpg",
+            price: "$50.00",
+            id: crypto.randomUUID() 
+        }
+    ]
+    
+    function addSample() {
+        setCloset([...sample, ...closet]);
+    }
 
     return (
         <>
@@ -159,6 +188,11 @@ export function AddPage({ closet, setCloset }) {
             <div class="tab-button">
                 Add
             </div>
+
+            <div>
+                <button onClick={addSample}>Add Sample Clothing</button>
+            </div>
+        
             <div className="add-page">
                 <input type='file' onChange={handleFileUpload} ref={imageRef} />
                 <div>
