@@ -24,3 +24,23 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
 }
+
+.outfit-draft .list {
+    display: flex;
+}
+
+.item-card{
+    margin: 20px;
+    
+}
+.item {
+    background-color: #9FE2BF;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.remove {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}

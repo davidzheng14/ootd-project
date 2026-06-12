@@ -1,5 +1,6 @@
 
 import { ListViewer } from '../components/ListViewer.jsx';
+import "./OutfitPage.css";
 
 export function OutfitPage( { outfitList } ) {
     return(

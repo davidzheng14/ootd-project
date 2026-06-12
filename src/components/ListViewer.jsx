@@ -10,7 +10,7 @@ export function ListViewer({ list, handleRemove, className, handleInfo }) {
 
 
     return (
-        <div>
+        <div className="list">
             {list.map((item) => (
                 <div className={className}>
                     <img src={item.image} width="100" height="100" />
