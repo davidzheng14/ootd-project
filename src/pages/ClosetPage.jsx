@@ -99,15 +99,19 @@ export function ClosetPage() {
                     <Link to="/closet/one-pieces">One-pieces</Link>
                 </div>
                 <div className="closet-button">
+                    <i class="ph ph-sock"></i>
                     <Link to="/closet/undergarments">Undergarments</Link>
                 </div>
                 <div className="closet-button">
+                    <i class="ph ph-sneaker"></i>
                     <Link to="/closet/footwear">Footwear</Link>
                 </div>
                 <div className="closet-button">
+                    <i class="ph ph-sketch-logo"></i>
                     <Link to="/closet/accessories">Accessories</Link>
                 </div>
                 <div className="closet-button">
+                    <i class="ph ph-question"></i>
                     <Link to="/closet/others">Others</Link>
                 </div>
             </div>

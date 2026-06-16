@@ -16,16 +16,20 @@ export function Sidebar() {
                     <Link to="/">Profile</Link>
                 </li>
                 <li className="link">
-                    <i className="bx bx-cupboard" />
+                    {/* <i className="bx bx-cupboard" /> */}
+                    <i class="ph ph-dresser"></i>
                     <Link to="/closet">Closet</Link>
                 </li>
                 <li className="link">
+                    <i class="ph ph-shirt-folded"></i>
                     <Link to="/outfit">Outfit</Link>
                 </li>
                 <li className="link">
+                    <i class="ph ph-calendar-blank"></i>
                     <Link to="/calendar">Calendar</Link>
                 </li>
                 <li className="link">
+                    <i class="ph ph-list-plus"></i>
                     <Link to="/add">Add</Link>
                 </li>
             </ul>
