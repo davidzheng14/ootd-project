@@ -1,4 +1,4 @@
-
+import { Login } from "./Login.jsx";
 
 export function HomePage({closet, outfitList}) {
 
@@ -7,7 +7,6 @@ export function HomePage({closet, outfitList}) {
 
     return (
         <>
-
             <h1>
                 Welcome, {firstName}!
             </h1>

@@ -8,6 +8,7 @@ import { CalendarPage } from './pages/CalendarPage.jsx';
 import { AddPage } from './pages/AddPage.jsx';
 import './App.css';
 import { Sidebar } from './components/Sidebar.jsx';
+import { Login } from './pages/Login.jsx';
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
           <Route path="outfit" element={<OutfitPage outfitList={outfitList} />} />
           <Route path="calendar" element={<CalendarPage />} />
           <Route path="add" element={<AddPage closet={closet} setCloset={setCloset}/>} />
+          <Route path="login" element={<Login />} />
         </Routes>
       </div>
     </div>
